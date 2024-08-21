@@ -399,3 +399,311 @@ background-color: #31d0aa;
 .footer-logo-wrapper {
     margin-right: 120px;
 }
+
+.subscribe-container {
+    margin-left: auto;
+        min-width: 453px;
+}
+.footer-form {
+    display: flex;
+   
+    gap: 24px;
+}
+.subscribe-label {
+ font-weight: 500;
+ color: #fff;
+ margin-bottom: 16px;
+}
+.subscribe-input {
+border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background-color: transparent;
+font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding: 8px 16px;
+}
+.subscribe-input::placeholder {
+color: #fff;
+font-family: "Roboto", sans-serif;
+
+}
+.subscribe-input:hover {
+    border-color: #4d5ae5;
+}
+.subscribe-button {
+display: flex;
+align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 4px;
+padding: 8px 24px;
+min-width: 165px;
+height: 40px;
+background-color: #4d5ae5;
+border: none;
+cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+background-color: #404bbf;
+}
+.subscribe-icon {
+ fill: #f4f4fd;
+ margin-left: 16px;
+}
+.subscribe-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 14px;
+}
+
+
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 999;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: visibility 50ms cubic-bezier(0.4, 0, 0.2, 1), opacity 50ms cubic-bezier(0.4, 0, 0.2, 1), pointer-events 50ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    background-color: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    min-height: 584px;
+    padding: 24px;
+    padding-top: 72px;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-open {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.backdrop-icon {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+.modal-close-button {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    border-radius: 50%;
+    min-width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: absolute;
+    top: 24px;
+    right: 24px;       
+}
+.backdrop-icon:hover,
+.backdrop-icon:focus {
+    fill: #fff;
+}
+.modal-close-button:hover,
+.modal-close-button:focus {
+    background-color: #404bbf;
+    border: none;
+} 
+
+.modal-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+    margin-bottom: 16px;
+    max-width: 360px;
+    
+
+}
+
+.form-name-wrapper {
+    margin-bottom: 8px;
+}
+
+.modal-label {
+    display: block;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+    margin-bottom: 4px;
+}
+
+.modal-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        width: 360px;
+        height: 40px;
+    padding-left: 62px;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.input-container {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2e2f42;
+    transition: fill 300ms linear;
+}
+
+.modal-input:focus + .modal-icon {
+    fill: #4d5ae5;
+}
+
+.comment-label {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal-textarea {
+    display: block;
+    border-radius: 13px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        width: 360px;
+        height: 120px;
+    resize: none;
+    outline: none;
+}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-textarea::placeholder {
+    padding-top: 8px;
+    padding-left: 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+}
+
+.form-comment-container {
+    margin-bottom: 16px;
+}
+
+.checkbox-icon {
+    fill: #f4f4fd;
+}
+
+.modal-submit {
+border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    border: none;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit:hover,
+.modal-submit:focus {
+    background-color: #404bbf;
+}
+
+.modal-checkbox-container {
+    margin-bottom: 24px;
+}
+
+.custom-checkbox {
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.modal-checkbox:checked+.custom-label-checkbox>.custom-checkbox {
+    border-color: #404bbf;
+    background-color: #404bbf;
+}
+
+.custom-label-checkbox {
+    cursor: pointer;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+.label-user-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    line-height: 1.33;
+        color: #4d5ae5;
+}
